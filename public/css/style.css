@@ -1,0 +1,217 @@
+.wpcmfcalc {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-weight: 500 !important;
+	border: 1px solid #ccc;
+	padding: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 10px #000;
+	-moz-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+}
+
+
+
+.wpcmf-col {
+	position:relative;	
+	white-space: nowrap;
+	}  
+.wpcmf-col-1, .wpcmf-col-2, .wpcmf-col-3, .wpcmf-col-4, .wpcmf-col-5, .wpcmf-col-6, .wpcmf-col-7, .wpcmf-col-8, .wpcmf-col-9, .wpcmf-col-10, .wpcmf-col-11, .wpcmf-col-12 {
+display: inline-block;		
+	min-height: 1px;
+	
+	}    
+.wpcmf-col-12 {width: 100%;}
+.wpcmf-col-11 {width: 91.66666666666666%;}
+.wpcmf-col-10 {width: 83.33333333333334%;}
+.wpcmf-col-9 {width: 75%;}
+.wpcmf-col-8 {width: 66.66666666666666%;}
+.wpcmf-col-7 {width: 58.333333333333336%;}
+.wpcmf-col-6 {width: 50%;}
+.wpcmf-col-5 {width: 41.66666666666667%;}
+.wpcmf-col-4 {width: 33.33333333333333%;}
+.wpcmf-col-3 {width: 25%;}
+.wpcmf-col-2 {width: 16.666666666666664%;}
+.wpcmf-col-1 {width: 8.333333333333332%;}
+ 
+ 
+
+.wpcmfcalc  input[type=button]{
+	display: inline-block;
+	color: #f3f3f3 !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border: none;
+	background: #444;
+	outline: none;
+	width: auto;
+	float: none;
+	text-shadow: -1px -1px 0px #333;
+	text-decoration: none;
+	padding: 10px 20px;	
+	opacity: 0.85;
+	font-size: 13px;
+	-webkit-appearance: none;
+}
+.wpcmfcalc input[type=button]:hover {
+	opacity: 1;
+	cursor: pointer;
+	background: #444 !important;
+}
+
+.wpcmfcalc input[type=text], .wpcmfcalc   input[type=number], .wpcmfcalc  select {
+	background: #fcfcfc;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #cecece;
+	padding: 10px;
+	display: block;
+	font-size: 15px;
+	line-height: 18px;	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 0 0 13px 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+.button_zakaz {
+	margin: 15px 0 0 0;	
+}
+
+.wpcmf_result_send {
+	display: none;
+}
+
+.wpcmfcalc input[type="radio"] {   
+	margin-bottom: 13px;
+	display:none;
+}
+
+.wpcmfcalc label {
+	display: block;
+	float: left;
+	padding: 3px 11px;
+	text-decoration: none;
+	color: #555555;
+	position: relative;
+	font-weight: 300;
+	background-position: 8px -28px;
+	background-repeat: no-repeat !important;
+	text-shadow: none !important;
+}
+
+.wpcmfcalc input[type="radio"]:checked + label {
+    background-color: #555555;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: white;
+	outline: none;
+}
+
+.wpcmfcalc input[type="checkbox"] {
+	border-radius: 4px;
+	height: 15px;
+	width: 15px;
+}
+
+.wpcmfcalc input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 7.5px 0;
+}
+.wpcmfcalc input[type=range]:focus {
+  outline: none;
+}
+.wpcmfcalc input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #fcfcfc;
+  border-radius: 1px;
+  border: 0.2px solid #cecece;
+}
+.wpcmfcalc input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #555555;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #cecece;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.7px;
+}
+.wpcmfcalc input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+.wpcmfcalc input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #fcfcfc;
+  border-radius: 1px;
+  border: 0.2px solid #cecece;
+}
+.wpcmfcalc input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #555555;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #cecece;
+  cursor: pointer;
+}
+.wpcmfcalc input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.wpcmfcalc input[type=range]::-ms-fill-lower {
+  background: #d3d3d3;
+  border: 0.2px solid #cecece;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.wpcmfcalc input[type=range]::-ms-fill-upper {
+  background: #fcfcfc;
+  border: 0.2px solid #cecece;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.wpcmfcalc input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #555555;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #cecece;
+  cursor: pointer;
+  height: 5px;
+}
+.wpcmfcalc input[type=range]:focus::-ms-fill-lower {
+  background: #fcfcfc;
+}
+.wpcmfcalc input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
+}

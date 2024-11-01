@@ -1,0 +1,212 @@
+/* Базовые стили слоя затемнения и модального окна  */
+.overlaywpcalcmf {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 8888;
+	visibility: hidden;
+	/* фон затемнения */
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	position: fixed; /* фиксированное поцизионирование */
+	cursor: default; /* тип курсара */
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+	}
+.overlaywpcalcmf:target {
+	visibility: visible;
+	opacity: 1;
+	}
+/* стили модального окна */
+.wpcalcmf {
+	line-height: 1;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;	
+	display: block;
+	visibility: hidden;
+	margin: 0 auto;
+	color: #555;
+	width: 98%;
+	max-width: 440px;
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+	position: fixed;
+	padding: 10px 20px;
+	border: 1px solid #383838;
+/* скругление углов */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+/* внешняя тень */
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+/* полная прозрачность окна, появление при клике */
+	opacity: 0;
+/* эффект перехода (появление) */
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	-ms-transition: all ease .5s;
+	-o-transition: all ease .5s;
+	transition: all ease .5s;
+	}
+
+.overlaywpcalcmf:target+.wpcalcmf {
+	top: 10%;
+	visibility: visible;
+	opacity: 1;
+	}
+
+/* формируем кнопку закрытия */
+.wpcalcmfclose {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	border: 2px solid #ccc;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	background-color: rgba(61, 61, 61, 0.8);
+	-webkit-box-shadow: 0px 0px 10px #000;
+	-moz-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 24px;
+	-webkit-transition: all ease .8s;
+	-moz-transition: all ease .8s;
+	-ms-transition: all ease .8s;
+	-o-transition: all ease .8s;
+	transition: all ease .8s;
+	}
+.wpcalcmfclose:before {
+	color: rgba(255, 255, 255, 0.9);
+	content: "X";
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	font-size: 14px;
+}
+.wpcalcmfclose:hover {
+	background-color: rgba(252, 20, 0, 0.8);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);    
+}
+.wpcmf {		
+	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+	color: #888;	
+	font-weight: normal;
+	font-weight: 600 !important;
+	font-size: 12px !important;
+	
+}	
+	
+	
+.wpcmf h2{
+	color: #555;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.3);
+	font:22px 'Trebuchet MS', Helvetica, sans-serif;
+	}
+
+	
+.wpcmf input[type=button]{
+	display: inline-block;
+	color: #f3f3f3 !important;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border: none;
+	background: #444;
+	outline: none;
+	width: auto;
+	float: none;
+	text-shadow: -1px -1px 0px #333;
+	text-decoration: none;
+	padding: 10px 20px;	
+	opacity: 0.85;
+	font-size: 13px;
+	-webkit-appearance: none;
+}
+
+.wpcmf input [type=button]:hover {
+	opacity: 1;
+	cursor: pointer;
+	background: #444 !important;
+}
+
+.wpcmf input[type=text],.wpcmf textarea,.wpcmf select{
+	background: #fcfcfc;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #cecece;
+	padding: 10px;
+	display: block;
+	font-size: 15px;
+	line-height: 18px;
+	color: #555;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin: 0 0 13px 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 13px;
+	}
+	
+.wpcalcmf textarea{
+	height:120px;
+}
+
+.wpcmf input[type="radio"] {   
+	 display:none;
+}
+
+.wpcmf label {
+	display: block;
+	float: left;
+	padding: 6px 11px;	
+	text-decoration: none;
+	color: #555555;
+	border-bottom: 1px dashed #a03717;
+	cursor: pointer;
+
+}
+
+.wpcmf input[type="radio"]:checked + label {
+    background-color: #555555;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: white;
+	outline: none;
+}
+
+.wpcmf input[type="checkbox"] {
+	border-radius: 4px;
+	height: 15px;
+	width: 15px;
+}
